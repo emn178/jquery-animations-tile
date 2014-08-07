@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Jquery-animations-tile : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Jquery-animations-tile</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/emn178/jquery-animations-tile">View on GitHub</a>
+
+          <h1 id="project_title">Jquery-animations-tile</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/emn178/jquery-animations-tile/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/emn178/jquery-animations-tile/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="jquery-animations-tile" class="anchor" href="#jquery-animations-tile"><span class="octicon octicon-link"></span></a>jQuery-animations-tile</h1>
+
+<p>A plugin of <a href="http://emn178.github.io/jquery-animations/">jQuery-animations</a> that provides tile animations.</p>
+
+<h2>
+<a name="download" class="anchor" href="#download"><span class="octicon octicon-link"></span></a>Download</h2>
+
+<p><a href="https://raw.github.com/emn178/jquery-animations-tile/master/build/jquery.animations-tile.min.js">Compress</a><br><a href="https://raw.github.com/emn178/jquery-animations-tile/master/src/jquery.animations-tile.js">Uncompress</a></p>
+
+<h2>
+<a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo</h2>
+
+<p><a href="http://emn178.github.io/jquery-animations-tile/samples/tile/">Tile</a>  </p>
+
+<h2>
+<a name="browser-support" class="anchor" href="#browser-support"><span class="octicon octicon-link"></span></a>Browser Support</h2>
+
+<p>jQuery-animations currently supports IE10+, Chrome, Firefox, Safari and Opera.</p>
+
+<h2>
+<a name="options" class="anchor" href="#options"><span class="octicon octicon-link"></span></a>Options</h2>
+
+<h6>
+<a name="rows-number-default-1" class="anchor" href="#rows-number-default-1"><span class="octicon octicon-link"></span></a><em>rows: <code>Number</code> (default: <code>1</code>)</em>
+</h6>
+
+<p>Sets rows of tiles.</p>
+
+<h6>
+<a name="cols-number-default-1" class="anchor" href="#cols-number-default-1"><span class="octicon octicon-link"></span></a><em>cols: <code>Number</code> (default: <code>1</code>)</em>
+</h6>
+
+<p>Sets columns of tiles.</p>
+
+<h6>
+<a name="effect-string-or-array-or-function-default-flyout" class="anchor" href="#effect-string-or-array-or-function-default-flyout"><span class="octicon octicon-link"></span></a><em>effect: <code>String</code> or <code>Array</code> or <code>Function</code> (default: <code>"flyOut"</code>)</em>
+</h6>
+
+<p>Sets animations to tiles, multiple for alternate. You can also use a function to calculate which effect to use. The function should be defined like this.</p>
+
+<pre><code>function func(options, row, col)
+{
+  return 'effect';
+}
+</code></pre>
+
+<h6>
+<a name="sequent-boolean-default-true" class="anchor" href="#sequent-boolean-default-true"><span class="octicon octicon-link"></span></a><em>sequent: <code>Boolean</code> (default: <code>true</code>)</em>
+</h6>
+
+<p>Sets the flag determining the animations of tiles run with different delays. It will be duration / tile count.</p>
+
+<h6>
+<a name="sequence-string-or-array-default-random" class="anchor" href="#sequence-string-or-array-default-random"><span class="octicon octicon-link"></span></a><em>sequence: <code>String</code> or <code>Array</code> (default: <code>"random"</code>)</em>
+</h6>
+
+<p>Sets the sequence method or custom orders to run the animations of tiles. Available methods:  </p>
+
+<p><strong>random</strong>: random tiles<br><strong>randomCols</strong>: random columns<br><strong>randomRows</strong>: random rows<br><strong>lr</strong>: left to right<br><strong>rl</strong>: right to left<br><strong>tb</strong>: top to bottom<br><strong>bt</strong>: bottom to top<br><strong>lrtb</strong>: left to right and top to bottom<br><strong>rlbt</strong>: right to left and bottom to top<br><strong>rltb</strong>: right to left and top to bottom<br><strong>lrtb</strong>: left to right and top to bottom<br><strong>lrbt</strong>: left to right and bottom to top<br><strong>tblr</strong>: top to bottom and left to right<br><strong>btrl</strong>: bottom to top and right to left<br><strong>tblr</strong>: top to bottom and left to right<br><strong>tbrl</strong>: top to bottom and right to left<br><strong>btlr</strong>: bottom to top and left to right  </p>
+
+<h6>
+<a name="groups-number-default-1" class="anchor" href="#groups-number-default-1"><span class="octicon octicon-link"></span></a><em>groups: <code>Number</code> (default: <code>1</code>)</em>
+</h6>
+
+<p>Sets groups to separate so that tiles of groups have the same delay time.</p>
+
+<h6>
+<a name="adjustduration-boolean-default-true" class="anchor" href="#adjustduration-boolean-default-true"><span class="octicon octicon-link"></span></a><em>adjustDuration: <code>Boolean</code> (default: <code>true</code>)</em>
+</h6>
+
+<p>Sets the flag determining the animations of tiles run with different duration. It will try to complete all animations of tiles in duration of entire animation.</p>
+
+<h2>
+<a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example</h2>
+
+<p>Basic usage</p>
+
+<div class="highlight highlight-JavaScript"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#want-to-animate'</span><span class="p">).</span><span class="nx">animate</span><span class="p">(</span><span class="s1">'tile'</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">rows</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="nx">cols</span><span class="o">:</span> <span class="mi">2</span>
+<span class="p">});</span>
+</pre></div>
+
+<p>Effects</p>
+
+<div class="highlight highlight-JavaScript"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#want-to-animate'</span><span class="p">).</span><span class="nx">animate</span><span class="p">(</span><span class="s1">'tile'</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">rows</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="nx">cols</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="nx">effect</span><span class="o">:</span> <span class="p">[</span>
+    <span class="s1">'flyToUp'</span><span class="p">,</span> <span class="c1">// for even tile</span>
+    <span class="s1">'flyToDown fadeOut'</span> <span class="c1">// for odd tile</span>
+  <span class="p">]</span>
+<span class="p">});</span>
+</pre></div>
+
+<p>Effects by function</p>
+
+<div class="highlight highlight-JavaScript"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#want-to-animate'</span><span class="p">).</span><span class="nx">animate</span><span class="p">(</span><span class="s1">'tile'</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">rows</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="nx">cols</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="nx">effect</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">options</span><span class="p">,</span> <span class="nx">row</span><span class="p">,</span> <span class="nx">col</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">row</span> <span class="o">==</span> <span class="nx">col</span><span class="p">)</span>
+      <span class="k">return</span> <span class="s1">'flyToUp'</span><span class="p">;</span>
+    <span class="k">else</span>
+      <span class="k">return</span> <span class="s1">'flyToDown'</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+
+<p>Sequence</p>
+
+<div class="highlight highlight-JavaScript"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#want-to-animate'</span><span class="p">).</span><span class="nx">animate</span><span class="p">(</span><span class="s1">'tile'</span><span class="p">,</span> <span class="p">{</span>
+  <span class="nx">rows</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="nx">cols</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="nx">sequence</span><span class="o">:</span> <span class="p">[</span>
+    <span class="p">[</span>
+      <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>  <span class="c1">// tile</span>
+    <span class="p">],</span> <span class="c1">// group, all tiles have same animation in the same group</span>
+    <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]],</span> 
+    <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]],</span> 
+    <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]]</span>
+  <span class="p">]</span>
+<span class="p">});</span>
+</pre></div>
+
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>The project is released under the <a href="http://www.opensource.org/licenses/MIT">MIT license</a>.</p>
+
+<h2>
+<a name="contact" class="anchor" href="#contact"><span class="octicon octicon-link"></span></a>Contact</h2>
+
+<p>The project's website is located at <a href="https://github.com/emn178/jquery-animations-tile">https://github.com/emn178/jquery-animations-tile</a><br>
+Author: <a href="mailto:emn178@gmail.com">emn178@gmail.com</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Jquery-animations-tile maintained by <a href="https://github.com/emn178">emn178</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-44208259-3");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
