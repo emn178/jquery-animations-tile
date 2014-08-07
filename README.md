@@ -33,23 +33,23 @@ Sets the flag determining the animations of tiles run with different delays. It 
 ###### *sequence: `String` or `Array` (default: `"random"`)*
 Sets the sequence method or custom orders to run the animations of tiles. Available methods:  
 
-*random*: random tiles  
-*randomCols*: random columns  
-*randomRows*: random rows  
-*lr*: left to right  
-*rl*: right to left  
-*tb*: top to bottom  
-*bt*: bottom to top  
-*lrtb*: left to right and top to bottom  
-*rlbt*: right to left and bottom to top  
-*rltb*: right to left and top to bottom  
-*lrtb*: left to right and top to bottom  
-*lrbt*: left to right and bottom to top  
-*tblr*: top to bottom and left to right  
-*btrl*: bottom to top and right to left  
-*tblr*: top to bottom and left to right  
-*tbrl*: top to bottom and right to left  
-*btlr*: bottom to top and left to right  
+**random**: random tiles  
+**randomCols**: random columns  
+**randomRows**: random rows  
+**lr**: left to right  
+**rl**: right to left  
+**tb**: top to bottom  
+**bt**: bottom to top  
+**lrtb**: left to right and top to bottom  
+**rlbt**: right to left and bottom to top  
+**rltb**: right to left and top to bottom  
+**lrtb**: left to right and top to bottom  
+**lrbt**: left to right and bottom to top  
+**tblr**: top to bottom and left to right  
+**btrl**: bottom to top and right to left  
+**tblr**: top to bottom and left to right  
+**tbrl**: top to bottom and right to left  
+**btlr**: bottom to top and left to right  
 
 ###### *groups: `Number` (default: `1`)*
 Sets groups to separate so that tiles of groups have the same delay time.
