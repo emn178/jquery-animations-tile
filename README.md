@@ -3,7 +3,7 @@ A plugin of [jQuery-animations](http://emn178.github.io/jquery-animations/) that
 
 ## Download
 [Compress](https://raw.github.com/emn178/jquery-animations-tile/master/build/jquery.animations-tile.min.js)  
-[Uncompress](https://raw.github.com/emn178/jquery-animations-tile/master/build/jquery.animations-tile.js)
+[Uncompress](https://raw.github.com/emn178/jquery-animations-tile/master/src/jquery.animations-tile.js)
 
 ## Demo 
 [Tile](http://emn178.github.io/jquery-animations-tile/samples/tile/)  
